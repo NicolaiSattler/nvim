@@ -1,3 +1,6 @@
+set background=dark
+let g:one_allow_italics = 1
+
 set exrc
 set guicursor=
 set signcolumn

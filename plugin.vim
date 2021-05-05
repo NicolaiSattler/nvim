@@ -1,16 +1,17 @@
-" use vim-plug as package manager.
+"use vim-plug as package manager.
 call plug#begin('~/.local/share/nvim/plugged')
-    Plug 'NLKNguyen/papercolor-theme'
+    " Plug 'NLKNguyen/papercolor-theme'
+    Plug 'rakr/vim-one'
 
     " nvim-tree
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'kyazdani42/nvim-tree.lua'
     
     Plug 'mbbill/undotree'
-
+    
 	" airline
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     "Git
     Plug 'tpope/vim-fugitive'
@@ -26,24 +27,25 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'jiangmiao/auto-pairs'
     
     " Code completion
-    " Plug 'neoclide/coc.nvim'                      unknown error code completion
-    " Plug 'coc-extensions/coc-omnisharp'           unknown error code completion
     Plug 'prabirshrestha/asyncomplete.vim'
     Plug 'prabirshrestha/asyncomplete-lsp.vim'
-    Plug 'yami-beta/asyncomplete-omni.vim'
+    "Plug 'yami-beta/asyncomplete-omni.vim'
+    Plug 'prabirshrestha/asyncomplete-buffer.vim'
+    Plug 'prabirshrestha/asyncomplete-file.vim'
     Plug 'prabirshrestha/vim-lsp'
     Plug 'mattn/vim-lsp-settings'
-    " TODO: snippets --> check vim-lsp for configuration.
-
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'tpope/vim-dispatch' " check github for config
     Plug 'Shougo/vimproc.vim', {'do': 'make'}
-    
-    "Fuzzy finder
-    " Plug 'junegunn/fzf', { 'do': { ->fzf#install() } } unknow error code completion
+    Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+    Plug 'junegunn/fzf.vim'
     
     "Linting
     Plug 'dense-analysis/ale'
-
+    
+    " TODO: 
+    " snippets --> check vim-lsp for configuration.
     " Plug 'puremourning/vimspector' <-- debugging in vim.. nais..
+    " vim-leader-guide (helpfull)
+
 call plug#end()
