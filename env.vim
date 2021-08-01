@@ -53,6 +53,27 @@ augroup END
 
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
+" credits ThePrimeagen :)
+nnoremap Y y$
+" keep cursor center 
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" undo breakpoints
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+" moving text
+" visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+"insert mode
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+" normal mode
+nnoremap <leader>k :m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
 
 if has('termguicolors')
 	set termguicolors

@@ -1,6 +1,8 @@
 filetype plugin on
 
 source ~/.config/nvim/env.vim
+source ~/.config/nvim/lsp.vim
+source ~/.config/nvim/navigation.vim
 source ~/.config/nvim/plugin.vim
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/telescope.nvim.vim
@@ -14,5 +16,6 @@ source ~/.config/nvim/plugins/asyncomplete-file.vim
 source ~/.config/nvim/plugins/omni.vim
 source ~/.config/nvim/plugins/matchtag.vim
 source ~/.config/nvim/plugins/undotree.vim
+source ~/.config/nvim/plugins/vimspector.vim
 
 color one

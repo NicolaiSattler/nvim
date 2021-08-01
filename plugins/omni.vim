@@ -32,14 +32,14 @@ augroup omnisharp_commands
     autocmd FileType cs nmap <silent> <buffer> [[ <Plug>(omnisharp_navigate_up)
     autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
     " Find all code errors/warnings for the current solution and populate the quickfix window
-    autocmd FileType cs nmap <silent> <buffer> <Leader>gcc <Plug>(omnisharp_global_code_check)
+    autocmd FileType cs nmap <silent> <buffer> <C-Q> <Plug>(omnisharp_global_code_check)
     " Contextual code actions (uses fzf, vim-clap, CtrlP or unite.vim selector when available)
     autocmd FileType cs nmap <silent> <buffer> <Leader>ca <Plug>(omnisharp_code_actions)
     " Repeat the last code action performed (does not use a selector)
     autocmd FileType cs xmap <silent> <buffer> <Leader>. <Plug>(omnisharp_code_action_repeat)
 
-    autocmd FileType cs nmap <silent> <buffer> <Leader>os= <Plug>(omnisharp_code_format)
-    autocmd FileType cs nmap <silent> <buffer> <Leader>nm <Plug>(omnisharp_rename)
+    autocmd FileType cs nmap <silent> <buffer> <A-S-f> <Plug>(omnisharp_code_format)
+    autocmd FileType cs nmap <silent> <buffer> <F2> <Plug>(omnisharp_rename)
 
     " autocmd FileType cs nmap <silent> <buffer> <Leader>osre <Plug>(omnisharp_restart_server)
     " autocmd FileType cs nmap <silent> <buffer> <Leader>osst <Plug>(omnisharp_start_server)

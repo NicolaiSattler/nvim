@@ -43,9 +43,11 @@ call plug#begin('~/.local/share/nvim/plugged')
     "Linting
     Plug 'dense-analysis/ale'
     
+    "Debugging
+    Plug 'puremourning/vimspector'
+    
     " TODO: 
     " snippets --> check vim-lsp for configuration.
-    " Plug 'puremourning/vimspector' <-- debugging in vim.. nais..
     " vim-leader-guide (helpfull)
 
 call plug#end()
