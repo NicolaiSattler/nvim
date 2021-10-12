@@ -8,9 +8,6 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>fc <cmd>lua require('telescope.builtin').commands()<cr>
 
-nnoremap <leader>hs <cmd>lua require('telescope.builtin').search_history()<cr>
-nnoremap <leader>hc <cmd>lua require('telescope.builtin').command_history()<cr>
-"
 " git sweetness
 nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>

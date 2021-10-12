@@ -3,7 +3,7 @@ let g:one_allow_italics = 1
 
 set exrc
 set guicursor=
-set signcolumn
+set signcolumn=auto
 syntax enable
 
 set tabstop=4 softtabstop=4
